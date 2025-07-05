@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Kuis Cepat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Game Kuis Cepat</h1>
+    <div id="quiz">
+      <div id="question-box">
+        <p id="question">Memuat pertanyaan...</p>
+        <div id="options"></div>
+        <div id="timer">
+  Sisa waktu: <span id="time">10</span> detik
+  <div class="progress-bar">
+    <div id="progress" class="progress"></div>
+  </div>
+</div>
+      </div>
+    </div>
+    <div id="result" class="hidden"></div>
+    <label for="fileInput" class="custom-file-upload">📂 Upload Soal (.json)</label>
+<input type="file" id="fileInput" accept=".json" hidden />
+<p id="fileName" style="font-size: 14px; color: #555;"></p>
+    <button id="start-btn">Mulai Kuis</button>
+  </div>
+  <footer>© 2025 awsdzx._</footer>
+  <script src="script.js"></script>
+</body>
+</html>

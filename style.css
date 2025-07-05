@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 80px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#options button {
+  width: 100%;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 16px;
+}
+
+#options button:hover {
+  background-color: #2980b9;
+  transform: scale(1.02);
+}
+
+#timer {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 10px;
+  background-color: #27ae60;
+  width: 100%;
+  transition: width 1s linear;
+}
+
+#result {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #2c3e50;
+}
+
+.hidden {
+  display: none;
+}
+
+#start-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #2ecc71;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#start-btn:hover {
+  background: #27ae60;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f39c12;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #e67e22;
+}
